@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+
+.main-header, .main-footer {
+  background-color: #333;
+  color: #f9f9f9;
+  grid-column: 1 / span 2;
+}
+
+.sidebar {
+  background-color: #ddd;
+}
+
+.main-header, .main-footer, .sidebar, .main {
+  padding: 20px;
+}
