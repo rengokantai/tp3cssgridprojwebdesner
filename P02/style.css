@@ -25,6 +25,9 @@ button {
   text-align: center;
   width: 640px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
 }
 
 .main2 {
@@ -42,13 +45,21 @@ button {
   border-radius: 4px;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(2, 200px);
+  grid-gap: 20px;
+  padding: 40px;
+}
+
 .card {
   background-color: white;
   border-radius: 4px;
-  height: 200px;
 }
 
 .card1 {
+  grid-column-end: span 2;
   padding: 10px;
   background-color: #9dbdc6;
   color: #fff;
